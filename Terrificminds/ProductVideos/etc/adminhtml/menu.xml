@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Terrificminds_ProductVideos::terrificminds_videos" title="Videos" 
+        module="Terrificminds_ProductVideos" sortOrder="20" resource="Terrificminds_ProductVideos::terrificminds_videos" />
+        <add id="Terrificminds_ProductVideos::terrificminds_videos_index" title="Videos"
+         module="Terrificminds_ProductVideos"  sortOrder="20" parent="Terrificminds_ProductVideos::terrificminds_videos"
+         dependsOnModule="Terrificminds_ProductVideos" action="productvideos/videos/index"
+         resource="Terrificminds_ProductVideos::terrificminds_videos_index"/>
+    </menu>
+</config>
+
+  

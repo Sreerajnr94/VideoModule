@@ -1,0 +1,17 @@
+<?php
+$product = $block->getProduct();
+$videoCollection = $block->getProductVideoCollections($product->getId());
+if(count($videoCollection)){
+    foreach($videoCollection as $videos){
+        echo $videos->getProductId();
+        echo "</br>";
+        echo $videos->getTitle();
+        echo "</br>";
+        echo $videos->getThumpNailImage();
+        echo "</br>";
+        echo $videos ->getVideoUrl();
+        echo "</br>";
+        echo $videos->getVideoDescription();
+    }
+}
+?>
